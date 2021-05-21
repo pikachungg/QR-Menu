@@ -1,0 +1,15 @@
+File structure for the QR-Code menu
+
+Key: 
+-- Titles 
+- Subtitle 
++ New dish
+[~] Description
+(~) Price
+
+Example: 
+
+-- Entree
+- Not vegan
++ Chicken Calamari [Tasty chicken calamary] (14.99)
++ Pizza [Legendary pizza with more than 20 years in the making] (10.99)
