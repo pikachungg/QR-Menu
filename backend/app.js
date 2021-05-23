@@ -73,6 +73,20 @@ app.post("/signin" , (req, res) => {
 	});
 });
 
+app.get("/getInformation?:email" ,(req, res) => {
+	const email = req.query.email;
+	client.connect(async (err) => {
+		if (err) throw err;
+		const collection = client.db("qr-menu").collection("Restaurants");
+		const user = await collection.findOne({email: email});
+		const information = {
+			_id: user._id,
+			name: user.name,
+		}
+		res.json(information);
+	});
+});
+
 app.listen(port, () => {
     console.log(`QR-menu backend`);
 });

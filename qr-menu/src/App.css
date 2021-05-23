@@ -1,6 +1,6 @@
 :root {
   --backgroundColor: rgb(246, 247, 243);
-  --colorA: rgb(235, 181, 64);
+  --colorA: #ebb540;
   --colorB: rgb(247, 188, 62);
 
 }
@@ -59,4 +59,31 @@
 
 .button-side p {
   font-size: .7rem;
+}
+
+.home-background {
+  background-image: url('../src/Assets/Images/background.png');
+  height: 100vh;
+}
+
+.home-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+.home-left-side-card {
+  display: block;
+  width: 70%;
+  height: 80%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  justify-self: center;
+  align-self: center;
+  backdrop-filter: blur(4px);
+}
+
+.home-content{
+  text-align: center;
 }
