@@ -1,8 +1,8 @@
 File structure for the QR-Code menu
 
 Key: 
--- Titles 
-- Subtitle 
+- Titles 
+-- Subtitle 
 + New dish
 [~] Description
 (~) Price

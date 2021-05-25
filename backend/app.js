@@ -9,16 +9,23 @@ const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: false,
 });
+const path = require("path");
 const QRCode = require('qrcode');
 const uuid = require('uuid');
+const multer = require("multer");
 app.use(cors());
 app.use(express.json());
 
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
+app.use('/QRCodes', express.static('QRCodes'));
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
+
+app.post("")
 
 app.post("/signup", (req, res) => {
 	const { email: emailDB, password: passwordDB, restaurantName: restaurantNameDB } = req.body;
@@ -74,6 +81,7 @@ app.post("/signin" , (req, res) => {
 });
 
 app.get("/getInformation?:email" ,(req, res) => {
+	console.log(__dirname);
 	const email = req.query.email;
 	client.connect(async (err) => {
 		if (err) throw err;

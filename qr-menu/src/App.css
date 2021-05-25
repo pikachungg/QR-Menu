@@ -87,3 +87,80 @@
 .home-content{
   text-align: center;
 }
+
+.home-submit-file input{
+  margin-bottom: 5%;
+}
+
+.home-submit-file button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 5%;
+
+  width: 65%;
+  height: 50px;
+  border-style: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--colorA);
+}
+
+.home-submit-file button:hover{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 5%;
+
+  width: 65%;
+  height: 50px;
+  border-style: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #f8ce72;
+}
+
+.instructions ul {
+  list-style: none;
+  justify-self: center;
+  text-align: left;
+}
+
+.instructions p{
+  margin:0;
+}
+
+.instructions {
+  margin-bottom: 5%;
+  display: grid;
+}
+
+.instructions img {
+  margin-top: 5%;
+}
+
+.example-menu{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 60%;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 3% 3% 3%;
+  text-align: left;
+  justify-self: center;
+  margin-top: 2.5%;
+}
+
+.example-right-container{
+  display: grid;
+  height: 100%;
+  align-content: center;
+}
+
+.example-right-container img {
+  justify-self: center;
+  margin-bottom: 2.5%;
+}
+
